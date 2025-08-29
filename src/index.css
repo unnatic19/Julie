@@ -1,0 +1,296 @@
+:root {
+  /* Apple Design System Colors */
+  --apple-blue: #007AFF;
+  --apple-blue-hover: #0056CC;
+  --apple-gray: #8E8E93;
+  --apple-gray-light: #C7C7CC;
+  --apple-gray-lighter: #F2F2F7;
+  --apple-black: #000000;
+  --apple-white: #FFFFFF;
+  --apple-secondary: #6D6D70;
+  --apple-tertiary: #48484A;
+  --apple-background: #F8F9FA;
+  --apple-surface: #FFFFFF;
+  --apple-border: #E5E5E7;
+  --apple-red: #FF3B30;
+  --apple-green: #34C759;
+  --apple-orange: #FF9500;
+  
+  /* Apple Typography */
+  --apple-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+  --apple-font-size-xs: 0.75rem;
+  --apple-font-size-sm: 0.875rem;
+  --apple-font-size-base: 1rem;
+  --apple-font-size-lg: 1.125rem;
+  --apple-font-size-xl: 1.25rem;
+  --apple-font-size-2xl: 1.5rem;
+  --apple-font-size-3xl: 1.875rem;
+  --apple-font-size-4xl: 2.25rem;
+  
+  /* Apple Spacing */
+  --apple-spacing-xs: 0.25rem;
+  --apple-spacing-sm: 0.5rem;
+  --apple-spacing-md: 1rem;
+  --apple-spacing-lg: 1.5rem;
+  --apple-spacing-xl: 2rem;
+  --apple-spacing-2xl: 2.5rem;
+  --apple-spacing-3xl: 3rem;
+  
+  /* Apple Border Radius */
+  --apple-radius-sm: 0.375rem;
+  --apple-radius-md: 0.5rem;
+  --apple-radius-lg: 0.75rem;
+  --apple-radius-xl: 1rem;
+  --apple-radius-2xl: 1.5rem;
+  
+  /* Apple Shadows */
+  --apple-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --apple-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --apple-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  
+  font-family: var(--apple-font-family);
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--apple-black);
+  background-color: var(--apple-background);
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: var(--apple-background);
+  color: var(--apple-black);
+  font-family: var(--apple-font-family);
+  font-size: var(--apple-font-size-base);
+  line-height: 1.6;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Apple-inspired Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 var(--apple-spacing-md) 0;
+  color: var(--apple-black);
+}
+
+h1 {
+  font-size: var(--apple-font-size-4xl);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: var(--apple-font-size-3xl);
+}
+
+h3 {
+  font-size: var(--apple-font-size-2xl);
+}
+
+h4 {
+  font-size: var(--apple-font-size-xl);
+}
+
+h5 {
+  font-size: var(--apple-font-size-lg);
+}
+
+h6 {
+  font-size: var(--apple-font-size-base);
+}
+
+p {
+  margin: 0 0 var(--apple-spacing-md) 0;
+  color: var(--apple-secondary);
+}
+
+/* Apple-inspired Links */
+a {
+  color: var(--apple-blue);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--apple-blue-hover);
+}
+
+/* Apple-inspired Buttons */
+.apple-button {
+  background-color: var(--apple-blue);
+  color: var(--apple-white);
+  border: none;
+  border-radius: var(--apple-radius-lg);
+  padding: var(--apple-spacing-sm) var(--apple-spacing-lg);
+  font-size: var(--apple-font-size-base);
+  font-weight: 500;
+  font-family: var(--apple-font-family);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+
+.apple-button:hover {
+  background-color: var(--apple-blue-hover);
+  transform: translateY(-1px);
+}
+
+.apple-button:active {
+  transform: translateY(0);
+}
+
+.apple-button-secondary {
+  background-color: var(--apple-gray-lighter);
+  color: var(--apple-black);
+}
+
+.apple-button-secondary:hover {
+  background-color: var(--apple-gray-light);
+}
+
+.apple-button-ghost {
+  background-color: transparent;
+  color: var(--apple-blue);
+  border: 1px solid var(--apple-border);
+}
+
+.apple-button-ghost:hover {
+  background-color: var(--apple-gray-lighter);
+}
+
+/* Apple-inspired Form Controls */
+.apple-input {
+  background-color: var(--apple-surface);
+  border: 1px solid var(--apple-border);
+  border-radius: var(--apple-radius-lg);
+  padding: var(--apple-spacing-sm) var(--apple-spacing-md);
+  font-size: var(--apple-font-size-base);
+  font-family: var(--apple-font-family);
+  color: var(--apple-black);
+  transition: all 0.2s ease;
+  outline: none;
+  min-height: 44px;
+}
+
+.apple-input:focus {
+  border-color: var(--apple-blue);
+  box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.1);
+}
+
+.apple-input::placeholder {
+  color: var(--apple-gray);
+}
+
+/* Apple-inspired Cards */
+.apple-card {
+  background-color: var(--apple-surface);
+  border-radius: var(--apple-radius-xl);
+  padding: var(--apple-spacing-xl);
+  box-shadow: var(--apple-shadow-sm);
+  border: 1px solid var(--apple-border);
+  transition: box-shadow 0.2s ease;
+}
+
+.apple-card:hover {
+  box-shadow: var(--apple-shadow-md);
+}
+
+/* Apple-inspired Layout */
+.apple-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--apple-spacing-xl);
+}
+
+.apple-page {
+  min-height: 100vh;
+  background-color: var(--apple-background);
+  display: flex;
+  flex-direction: column;
+}
+
+.apple-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Apple-inspired Utilities */
+.apple-text-primary {
+  color: var(--apple-black);
+}
+
+.apple-text-secondary {
+  color: var(--apple-secondary);
+}
+
+.apple-text-tertiary {
+  color: var(--apple-tertiary);
+}
+
+.apple-text-center {
+  text-align: center;
+}
+
+.apple-mb-sm {
+  margin-bottom: var(--apple-spacing-sm);
+}
+
+.apple-mb-md {
+  margin-bottom: var(--apple-spacing-md);
+}
+
+.apple-mb-lg {
+  margin-bottom: var(--apple-spacing-lg);
+}
+
+.apple-mt-sm {
+  margin-top: var(--apple-spacing-sm);
+}
+
+.apple-mt-md {
+  margin-top: var(--apple-spacing-md);
+}
+
+.apple-mt-lg {
+  margin-top: var(--apple-spacing-lg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .apple-container {
+    padding: var(--apple-spacing-md);
+  }
+  
+  .apple-card {
+    padding: var(--apple-spacing-lg);
+  }
+  
+  h1 {
+    font-size: var(--apple-font-size-3xl);
+  }
+  
+  h2 {
+    font-size: var(--apple-font-size-2xl);
+  }
+}

@@ -1,0 +1,103 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Build outputs
+dist/
+dist-ssr/
+build/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+backend.log
+frontend.log
+
+# Python virtual environment
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+colour-service/.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Uploaded files and processed images
+backend/uploads/
+backend/processed/
+uploads/
+processed/
+
+# Keep sample images but ignore uploaded ones
+*.jpg
+*.jpeg
+*.png
+*.gif
+!sample.jpg
+!profile.jpg
+!dress.jpg
+!dress2.jpg
+!dress3.jpg
+!another_dress.jpg
+!pants.jpg
+!top.jpeg
+!tshirt.jpg
+!test.jpeg
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+
+# Package files
+*.tgz
+*.tar.gz
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Database
+*.sqlite
+*.db
+
+# API Keys (should be in environment variables)
+# Don't commit API keys in source code
